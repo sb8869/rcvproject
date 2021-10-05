@@ -1,0 +1,75 @@
+.text { 
+    padding-left: 2rem !important;
+    font-size: 1.5rem !important;
+}
+
+.black-text {
+    color: #000 !important;
+}
+
+nav {
+    background-color: #fff !important;
+    box-shadow: none !important;
+}
+
+body {
+    width: 99% !important;
+    margin: auto !important;
+}
+
+section {
+    width: 1000px;
+    height: auto;
+    margin: 100px auto;
+    display: flex !important;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+
+h4 {
+    text-align: center !important;
+}
+
+div.choice {
+    width: 350px ;
+    height: auto;
+    padding: 10px ;
+    margin-right: 10px;
+    background-color: lightgray ;
+    box-sizing: border-box ;
+   
+}
+
+div.choice p {
+    background: whitesmoke;
+}
+
+p.hidden {
+    background-color: lightgray !important;
+    color: lightgray !important;
+}
+
+.choice-title {
+    background-color: lightgray !important;
+    font-size: 1.25em !important;
+    text-align: center;
+}
+
+.choice-container {
+    display: flex !important;
+    background-color: lightgray !important;
+    height: auto;
+    box-shadow: 5px 5px 2px 1px gray;
+}
+
+.box-shadow {
+    box-shadow: 5px 5px 2px 1px gray;
+}
+
+.padding-fix {
+    height: 350px;
+    padding-top: 10px !important;
+    /* bottom: 10px; */
+}
+

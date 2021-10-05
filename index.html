@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranked Choice Voting</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    <script src="https://kit.fontawesome.com/1135650420.js" crossorigin="anonymous"></script>
+    <script defer src="src/main.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="text black-text">2021 New York Primary for Democratic</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#" class="black-text"><i class="black-text material-icons left fas fa-cogs"></i> Settings </a></li>
+            <li><a href="#" class="black-text"><i class="black-text material-icons left fas fa-info-circle"></i> Instructions </a></li>
+            <li><a href="#" class="black-text"><i class="black-text material-icons left fas fa-question-circle"></i> Questions </a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <section>
+        <div class="choice box-shadow padding-fix"><p class="choice-title">Your Ranked Order List</p><p class="hidden">.</p></div>
+        <div class="choice-container box-shadow">
+            <div class="choice"> 
+                <p class="choice-title">Candidates</p>
+                <p class="hidden">.</p>
+                <p draggable="true" class="card-panel">Candidate 1</p>
+                <p draggable="true" class="card-panel">Candidate 2</p>
+                <p draggable="true" class="card-panel">Candidate 3</p>
+                <p draggable="true" class="card-panel">Candidate 4</p>
+                <p draggable="true" class="card-panel">Candidate 5</p>
+            </div>
+            <div class="choice">
+                <p class="hidden choice-title">.</p>
+                <p class="hidden">.</p>
+                <p draggable="true" class="card-panel">Candidate 6</p>
+                <p draggable="true" class="card-panel">Candidate 7</p>
+                <p draggable="true" class="card-panel">Candidate 8</p>
+                <p draggable="true" class="card-panel">Candidate 9</p>
+                <p draggable="true" class="card-panel">Candidate 10</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
