@@ -1,10 +1,19 @@
-var p = document.getElementsByTagName('p');
-var choice = document.getElementsByClassName('choice');
-var dragItem = null;
+let p = document.getElementsByTagName('p');
+let choice = document.getElementsByClassName('choice');
+let dragItem = null;
+let dropZone = document.getElementById('dropZone');
+let leftSide = document.getElementById('leftSide');
+console.log(leftSide);
+let rightSide = document.getElementById('rightSide');
+
+let rankedList = [];
+
+// console.log(dropZone);
 
 for (var i of p){
     i.addEventListener('dragstart', dragStart);
     i.addEventListener('dragend', dragEnd);
+    i.addEventListener('click', onClick);
 }
 
 function dragStart(){
@@ -25,7 +34,30 @@ for (j of choice){
 }
 
 function Drop(){
-    this.append(dragItem);
+    
+    // since this isnt the dropZone then remove draggedItem from the list
+    console.log(this !== dropZone);
+    if(this !== dropZone) {
+        const index = rankedList.indexOf(dragItem)
+        if (index > -1) { rankedList.splice(index, 1) }
+        // checking if draggedItem belongs on left or right
+        if (dragItem.id === "left") {
+            leftSide.append(dragItem);
+        } 
+        else if (dragItem.id === "right") {
+            rightSide.append(dragItem);
+        }
+    }
+    else {
+        if(rankedList.length === 5) {
+            return;
+        }
+        rankedList.push(dragItem);
+        this.append(dragItem);
+    }
+    console.log(rankedList);
+    // rankedList.push(dragItem);
+    // this.append(dragItem);
 }
 
 function dragOver(e){
@@ -38,4 +70,39 @@ function dragEnter(e){
 
 function dragLeave(e){
 
+}
+
+function onClick() {
+    
+    // console.log(dropZone.contains(this));
+    if(dropZone.contains(this)){
+        // console.log(this.id);
+
+        // remove this from the list
+        const index = rankedList.indexOf(this)
+        if (index > -1) { rankedList.splice(index, 1) }
+
+        console.log(rankedList);
+
+        // then append it to left or right
+        // if the id is left then it goes back to the left
+        if(this.id === "left") {
+            // console.log('inleft');
+            leftSide.append(this);
+        }
+        // vice versa
+        else if(this.id === "right") {
+            rightSide.append(this);
+        }
+    }
+    
+
+    else if (!dropZone.contains(this)) {
+        if(rankedList.length === 5) {
+            return;
+        }
+        rankedList.push(this);
+        console.log(rankedList);
+        dropZone.append(this);
+    }
 }
