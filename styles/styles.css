@@ -10,21 +10,24 @@
 nav {
     background-color: #fff !important;
     box-shadow: none !important;
+    margin: 1em 0em !important;
 }
 
+
+/*
 body {
     width: 99% !important;
-    margin: auto !important;
+    margin: none !important;
 }
+*/
 
 section {
-    width: 1000px;
+    width: 1400px; 
     height: auto;
     margin: 100px auto;
     display: flex !important;
     justify-content: space-around;
     flex-direction: row;
-
 }
 
 h4 {
@@ -32,17 +35,18 @@ h4 {
 }
 
 div.choice {
-    width: 350px ;
+    width: 550px;
     height: auto;
-    padding: 10px ;
+    padding: 10px;
     margin-right: 10px;
-    background-color: lightgray ;
-    box-sizing: border-box ;
-   
+    background-color: lightgray;
+    box-sizing: border-box;
+    max-height: 610px;
 }
 
 div.choice p {
     background: whitesmoke;
+    height: 80px;
 }
 
 p.hidden {
@@ -67,9 +71,18 @@ p.hidden {
     box-shadow: 5px 5px 2px 1px gray;
 }
 
+.scroll {
+    overflow-y: auto;
+}
+
+/*
 .padding-fix {
     height: 350px;
     padding-top: 10px !important;
-    /* bottom: 10px; */
+     bottom: 10px; 
 }
+*/
 
+/* #cand1 {
+    background-color: blue;
+} */
