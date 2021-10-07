@@ -63,7 +63,7 @@ p.hidden {
 .choice-container {
     display: flex !important;
     background-color: lightgray !important;
-    height: auto;
+    height: 610px;
     box-shadow: 5px 5px 2px 1px gray;
 }
 
@@ -73,6 +73,22 @@ p.hidden {
 
 .scroll {
     overflow-y: auto;
+}
+/* .behinder {
+    z-index: -1;
+} */
+.behind {
+    z-index: 0;
+}
+
+.above {
+    z-index: 100;
+}
+
+.cand1 {
+    position:absolute;
+    top: 300px;
+    left: 100px;
 }
 
 /*
