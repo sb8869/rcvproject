@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ranked Choice Voting</title>
 
+
     <link rel="stylesheet" href="styles/styles.css">
 
     <!-- Compiled and minified CSS -->
@@ -14,12 +15,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
             
     <script src="https://kit.fontawesome.com/1135650420.js" crossorigin="anonymous"></script>
-    <script defer src="src/main.js"></script>
+    <script type="module" src="src/main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;400;600&display=swap" rel="stylesheet">
+
+    <!-- <script src="https://d3js.org/d3.v4.min.js"></script>
+     -->
+
 </head>
 <body>
+
     <nav>
         <div class="nav-wrapper">
-          <a href="#" class="text black-text">2021 New York Primary for Democratic</a>
+          <a href="#" class="text white-text">2021 New York Primary for Democratic</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="#" class="black-text"><i class="black-text material-icons left fas fa-cogs"></i> Settings </a></li>
             <li><a href="#" class="black-text"><i class="black-text material-icons left fas fa-info-circle"></i> Instructions </a></li>
@@ -28,31 +38,44 @@
         </div>
     </nav>
 
-    <h5 id="rank">Your Ranked Order List</h5>
+    <h5 id="rank">Your Rank Order List</h5>
+
     <h5 id="candidates">Candidates</h5>
+    <h5 id="candidates-change">Select your <span id='candidates-change-span'>first</span> choice pick</h5>
 
     <section>
-        <div class="choice choice2 z-depth-3 box-shadow padding-fix scroll" id='dropZone'></div>
-        <div class="choice-container box-shadow">
+
+        <div id='dropZone' class="choice padding-fix scroll"></div>
+
+        <div class="choice-container">
             <div id='leftSide' class="choice">   
-                <p draggable="true" id="left" class="above card-panel">Candidate 1</p>
-                <p draggable="true" id="left" class="card-panel">Candidate 2</p>
-                <p draggable="true" id="left" class="card-panel">Candidate 3</p>
-                <p draggable="true" id="left" class="card-panel">Candidate 4</p>
-                <p draggable="true" id="left" class="card-panel">Candidate 5</p>
-                <p draggable="true" id="left" class="card-panel">Candidate 6</p>
-                <p draggable="true" id="left" class="card-panel">Candidate 7</p>
+                <p draggable="true" id="left" class="card-panel z-depth-2">Eric Adams</p>
+                <p draggable="true" id="left" class="card-panel z-depth-2">Kathryn Garcia</p>
+                <p draggable="true" id="left" class="card-panel z-depth-2">Eric Johnson</p>
+                <p draggable="true" id="left" class="card-panel z-depth-2">Maya Wiley</p>
+                <p draggable="true" id="left" class="card-panel z-depth-2">Andrew Yang</p>
+            </div>
+            <div id='middleSide' class="choice">   
+                <p draggable="true" id="middle" class="card-panel z-depth-2">Raymond McGuire</p>
+                <p draggable="true" id="middle" class="card-panel z-depth-2">Dianne Morales</p>
+                <p draggable="true" id="middle" class="card-panel z-depth-2">Scott Stringer</p>
+                <p draggable="true" id="middle" class="card-panel z-depth-2">Shaun Donovan</p>
+                <p draggable="true" id="middle" class="card-panel z-depth-2">Art Chang</p>
             </div>
             <div id='rightSide' class="choice">
-                <p draggable="true" id="right" class="card-panel">Candidate 8</p>
-                <p draggable="true" id="right" class="card-panel">Candidate 9</p>
-                <p draggable="true" id="right" class="card-panel">Candidate 10</p>
-                <p draggable="true" id="right" class="card-panel">Candidate 11</p>
-                <p draggable="true" id="right" class="card-panel">Candidate 12</p>
-                <p draggable="true" id="right" class="card-panel">Candidate 13</p>
-                <p draggable="true" id="right" class="card-panel">Candidate 14</p>
+                <p draggable="true" id="right" class="card-panel z-depth-2">Aaron Foldernauer</p>
+                <p draggable="true" id="right" class="card-panel z-depth-2">Paperboy Prince</p>
+                <p draggable="true" id="right" class="card-panel z-depth-2">Joycelyn Taylor</p>
+                <p draggable="true" id="right" class="card-panel z-depth-2">Isaac Wright Jr.</p>
+                <p draggable="true" id="right" class="card-panel z-depth-2">Write In Candidate</p>
             </div>
         </div>
     </section>
+    <div id='num1'>1</div>
+    <div id='num2'>2</div>
+    <div id='num3'>3</div>
+    <div id='num4'>4</div>
+    <div id='num5'>5</div>
+    <button id='numSubmit' type="button" class="card-panel">Submit</button>
 </body>
 </html>
