@@ -20,25 +20,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;400;600&display=swap" rel="stylesheet">
-
-    <!-- <script src="https://d3js.org/d3.v4.min.js"></script>
-     -->
-
 </head>
 <body>
 
     <nav>
         <div class="nav-wrapper">
-          <a href="#" class="text white-text">2021 New York Primary for Democratic</a>
+          <a href="#" class="text white-text"><img src="assets/logo.png" id="logo" alt="2021 New York Primary for Democratic Logo."></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#" class="black-text"><i class="black-text material-icons left fas fa-cogs"></i> Settings </a></li>
+
+            <li> <a class="btn-floating btn-medium waves-effect waves-light indigo darken-4"> <i class="material-icons fas fa-cog"></i></a>  </li>
+            <li> <a class="btn-floating btn-medium waves-effect waves-light indigo darken-4"> <i class="material-icons fas fa-book-reader"></i></a>  </li>
+            <li> <a class="btn-floating btn-medium waves-effect waves-light indigo darken-4"> <i class="material-icons fas fa-question"></i></a>  </li>
+
+             <!--
+            <li><a href="#" class="black-text"><i class="black-text material-icons left fas fa-cogs"></i> Accessibility </a></li>
             <li><a href="#" class="black-text"><i class="black-text material-icons left fas fa-info-circle"></i> Instructions </a></li>
             <li><a href="#" class="black-text"><i class="black-text material-icons left fas fa-question-circle"></i> Help </a></li>
+            -->
+
           </ul>
         </div>
     </nav>
 
-    <h5 id="rank">Your Rank Order List</h5>
+    <h5 id="settingsText">Settings</h5>
+    <!-- <h5 id="accessibilityText">Accessibility</h5> -->
+    <!-- <h5 id="helpText">Help</h5> -->
+
+    <h5 id="rank">Your Ranked Ballot</h5>
 
     <h5 id="candidates">Candidates</h5>
     <h5 id="candidates-change">Select your <span id='candidates-change-span'>first</span> choice pick</h5>
@@ -48,26 +56,56 @@
         <div id='dropZone' class="choice padding-fix scroll"></div>
 
         <div class="choice-container">
-            <div id='leftSide' class="choice">   
-                <p draggable="true" id="left" class="card-panel z-depth-2">Eric Adams</p>
+            <div id='leftSide' class="choice"> 
+                <span id='left1'>  
+                    <p draggable="true" id="left" class="card-panel z-depth-2">Eric Adams</p>
+                </span>
+                <span id="left2">
                 <p draggable="true" id="left" class="card-panel z-depth-2">Kathryn Garcia</p>
+                </span>
+                <span id="left3">
                 <p draggable="true" id="left" class="card-panel z-depth-2">Eric Johnson</p>
+                </span>
+                <span id="left4">
                 <p draggable="true" id="left" class="card-panel z-depth-2">Maya Wiley</p>
+                </span>
+                <span id="left5">
                 <p draggable="true" id="left" class="card-panel z-depth-2">Andrew Yang</p>
+            </span>
             </div>
             <div id='middleSide' class="choice">   
-                <p draggable="true" id="middle" class="card-panel z-depth-2">Raymond McGuire</p>
-                <p draggable="true" id="middle" class="card-panel z-depth-2">Dianne Morales</p>
-                <p draggable="true" id="middle" class="card-panel z-depth-2">Scott Stringer</p>
-                <p draggable="true" id="middle" class="card-panel z-depth-2">Shaun Donovan</p>
-                <p draggable="true" id="middle" class="card-panel z-depth-2">Art Chang</p>
+                <span id='middle1'>
+                    <p draggable="true" id="middle" class="card-panel z-depth-2">Raymond McGuire</p>
+                </span>
+                <span id="middle2">
+                    <p draggable="true" id="middle" class="card-panel z-depth-2">Dianne Morales</p>
+                </span>
+                <span id="middle3">
+                    <p draggable="true" id="middle" class="card-panel z-depth-2">Scott Stringer</p>
+                </span>
+                <span id="middle4">
+                    <p draggable="true" id="middle" class="card-panel z-depth-2">Shaun Donovan</p>
+                </span>
+                <span id="middle5">
+                    <p draggable="true" id="middle" class="card-panel z-depth-2">Art Chang</p>
+                </span>
             </div>
             <div id='rightSide' class="choice">
+                <span id="right1">
                 <p draggable="true" id="right" class="card-panel z-depth-2">Aaron Foldernauer</p>
+                </span>
+                <span id="right2">
                 <p draggable="true" id="right" class="card-panel z-depth-2">Paperboy Prince</p>
+                </span>
+                <span id="right3">
                 <p draggable="true" id="right" class="card-panel z-depth-2">Joycelyn Taylor</p>
+                </span>
+                <span id="right4">
                 <p draggable="true" id="right" class="card-panel z-depth-2">Isaac Wright Jr.</p>
+                </span>
+                <span id="right5">
                 <p draggable="true" id="right" class="card-panel z-depth-2">Write In Candidate</p>
+                </span>
             </div>
         </div>
     </section>

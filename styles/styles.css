@@ -2,9 +2,8 @@
 /*
 COLORS:
 Primary Blue: 5757F2
-Dark Blue: 3E3EC4
+Dark Blue: 1E1E92
 */
-
 
 /* Page Setup */
 
@@ -25,8 +24,24 @@ nav {
     background: linear-gradient(90deg, #5757F2 34%, #FFFFFF 34%);
 }
 
+#logo {
+    width: 302px;
+    height: 52px;
+    margin-top: 10px;
+}
+
 h4 {
     text-align: center !important;
+}
+
+#settingsText, #helpText, #accessibilityText {
+    font-size: 0.8em;
+}
+
+#settingsText {
+    position: absolute;
+    right: 153px;
+    top: 60px;
 }
 
 .card-panel {
@@ -141,18 +156,25 @@ section {
 
 #numSubmit {
     position: absolute;
-    top: 770px;
-    right: 125px;
-
+    top: 780px;
+    left: 150px;
     font-weight: 600;
     width: 325px;
     height: 80px;
     padding: 10px;
     margin: 10px;
     box-sizing: border-box;
-    border-radius: 5px !important;
+    border-radius: 8px !important;
+    border: none;
 }
 
+#numSubmit:hover, #numSubmit:focus{
+    border: none;
+}
+
+#numSubmit:active{
+    border: none;
+}
 
 
 /* Right Side */
@@ -165,7 +187,7 @@ section {
 .choice-container {
     display: flex !important;
     background-color: whitesmoke;
-    border-radius: 5px !important;
+    border-radius: 8px !important;
     margin-right: 0;
 }
 
@@ -174,7 +196,7 @@ div.choice {
     padding: 10px;
     margin: 10px;
     box-sizing: border-box;
-    border-radius: 5px !important;
+    border-radius: 8px !important;
 }
 
 div.padding-fix {
@@ -183,14 +205,14 @@ div.padding-fix {
     margin-right: 50px;
     box-sizing: border-box;
     overflow-y: auto;
-    border-radius: 5px !important;
+    border-radius: 8px !important;
     max-height: 680px;
 }
 
 div.choice p {
     background: white;
     height: 80px;
-    border-radius: 5px !important;
+    border-radius: 8px !important;
 }
 
 p.hidden {
@@ -261,44 +283,10 @@ p.hidden {
     color:#5757F2;
 }
 
+
+
 /* .cardpanel {
     transition-duration: 1000ms;
 } */
 
-
-/*
-Misc
-
-.padding-fix {
-    height: 350px;
-    padding-top: 10px !important;
-     bottom: 10px; 
-}
-
-#cand1 {
-    background-color: blue;
-} 
-
-
-body {
-    width: 99% !important;
-    margin: none !important;
-}
-
-.box-shadow {
-    box-shadow: 5px 5px 2px 1px gray;
-} 
-
-.text { 
-    padding-left: 2rem !important;
-    font-size: 1.5rem !important;
-}
-*/
-
-/* background-color: lightgray !important; */
-/* height: 610px; */
-/* box-shadow: 5px 5px 2px 1px gray; */
-
-/* background-color: lightgray !important; */
-/* text-align: center; */
 
