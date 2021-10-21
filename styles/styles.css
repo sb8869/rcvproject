@@ -3,7 +3,15 @@
 COLORS:
 Primary Blue: 5757F2
 Dark Blue: 1E1E92
+alt 1a237e
 */
+
+
+
+
+
+
+
 
 /* Page Setup */
 
@@ -34,16 +42,6 @@ h4 {
     text-align: center !important;
 }
 
-#settingsText, #helpText, #accessibilityText {
-    font-size: 0.8em;
-}
-
-#settingsText {
-    position: absolute;
-    right: 153px;
-    top: 60px;
-}
-
 .card-panel {
     cursor: pointer;    
 }
@@ -51,7 +49,8 @@ h4 {
 body {
     background: linear-gradient(90deg, #5757F2 34%, #FFFFFF 34%);
     font-family: 'Kumbh Sans', sans-serif;
-    font-size: 400;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 section {
@@ -63,6 +62,66 @@ section {
     justify-content: space-between;
     flex-direction: row;
 }
+
+
+
+/* Nav */
+
+#instructions_button, #access_button, #help_button {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 8px;
+    background: #1E1E92;
+    border-radius: 32px;
+}
+#access_button {
+    left: 1600px;
+}
+#instructions_button {
+    left: 1700px;
+}
+#help_button {
+    left: 1800px;
+}
+#instructions_button img, #access_button img, #help_button img {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+#access_button img {
+    left: 12px;
+}
+#instructions_button img {
+    top: 14px;
+}
+#help_button img {
+    left: 6px;
+    top: 4px;
+}
+
+#instructionsText, #helpText, #accessibilityText {
+    font-size: 0.8em;
+    position: absolute;
+    top: 76px;
+    font-weight: 600;
+}
+
+#accessibilityText {
+    left: 1584px;
+}
+#instructionsText {
+    left: 1689px;
+}
+#helpText {
+    left: 1810px;
+}
+
+
+
+
+
+
 
 
 
@@ -103,7 +162,6 @@ section {
     width: 45px;
     border-radius: 50%;
     text-align: center;
-    font-size: 2rem;
     padding-top: 1px;
     color:white;
     font-size: 2rem;
@@ -117,7 +175,6 @@ section {
     width: 45px;
     border-radius: 50%;
     text-align: center;
-    font-size: 2rem;
     padding-top: 1px;
     color:white;
     font-size: 2rem;
@@ -131,7 +188,6 @@ section {
     width: 45px;
     border-radius: 50%;
     text-align: center;
-    font-size: 2rem;
     padding-top: 1px;
     color:white;
     font-size: 2rem;
@@ -145,7 +201,6 @@ section {
     width: 45px;
     border-radius: 50%;
     text-align: center;
-    font-size: 2rem;
     padding-top: 1px;
     color:white;
     font-size: 2rem;
@@ -153,6 +208,57 @@ section {
     top: 640px;
     left: 75px;
 }
+
+#x-1 img, #x-2 img, #x-3 img, #x-4 img, #x-5 img {
+    width: 20px;
+    height: auto;
+}
+
+#x-1 {
+    position: absolute;
+    top: 260px;
+    left: 540px;
+    display: none;
+    cursor: pointer;
+}
+
+#x-2 {
+    position: absolute;
+    top: 360px;
+    left: 540px;
+    display: none;
+    cursor: pointer;
+}
+
+#x-3 {
+    position: absolute;
+    top: 450px;
+    left: 540px;
+    display: none;
+    cursor: pointer;
+}
+
+#x-4 {
+    position: absolute;
+    top: 550px;
+    left: 540px;
+    display: none;
+    cursor: pointer;
+}
+
+#x-5 {
+    position: absolute;
+    top: 640px;
+    left: 540px;
+    display: none;
+    cursor: pointer;
+}
+
+/*
+body a {
+    color: black;
+}
+*/
 
 #numSubmit {
     position: absolute;
@@ -176,6 +282,38 @@ section {
     border: none;
 }
 
+#blankSpace1, #blankSpace2, #blankSpace3, #blankSpace4, #blankSpace5{
+    position: absolute;
+    width: 380px;
+    height: 79px;
+    background-color: #5454e7;
+    left: 140px;
+    border-radius: 8px !important;
+    z-index: -2;
+}
+
+#blankSpace1{
+    top: 232px;
+}
+#blankSpace2{
+    top: 327px;
+}
+#blankSpace3{
+    top: 422px;
+}
+#blankSpace4{
+    top: 516px;
+}
+#blankSpace5{
+    top: 611px;
+}
+
+.inner-shadow{
+    box-shadow: inset 6px 6px 14px rgba(52, 52, 143, 0.3) !important; 
+}
+
+
+
 
 /* Right Side */
 
@@ -186,7 +324,7 @@ section {
 
 .choice-container {
     display: flex !important;
-    background-color: whitesmoke;
+    background-color: none;
     border-radius: 8px !important;
     margin-right: 0;
 }
@@ -283,6 +421,11 @@ p.hidden {
     color:#5757F2;
 }
 
+#middle, #left, #right {
+    /* Visual Drop Shadow */
+    box-shadow: 6px 6px 25px rgba(52, 52, 143, 0.3) !important; 
+    border-radius: 8px !important;
+}
 
 
 /* .cardpanel {

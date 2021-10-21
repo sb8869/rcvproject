@@ -32,7 +32,6 @@ let right3 = document.getElementById('right3');
 let right4 = document.getElementById('right4');
 let right5 = document.getElementById('right5');
 
-
 let rankedList = [];
 
 if (rankedList.length === 0) {
@@ -80,40 +79,43 @@ function Drop(){
         if (rankedList.length === 1) {
             
             submitButton.disabled = true;
-            first.style.backgroundColor = '#1a237e'; 
+            first.style.backgroundColor = '#1E1E92'; 
             second.style.backgroundColor = '#5757F2';
-            // submitButton.backgroundColor = "#5757F2";
-            // submitButton.style.cursor = 'default';
-            // submitButton.color = "#fff";
+            submitButton.backgroundColor = "#1E1E92";
+            submitButton.style.cursor = 'default';
+            submitButton.color = "#fff";
             candidates.innerHTML = "Select your <span id='candidates-change-span'>first</span> choice pick"
 
         }
         if (rankedList.length === 2) {
-            second.style.backgroundColor = '#1a237e';
+            second.style.backgroundColor = '#1E1E92';
             third.style.backgroundColor = '#5757F2';
-            // submitButton.backgroundColor = "#5757F2";
-            // submitButton.style.cursor = 'pointer';
-            // submitButton.color = "#fff";
+            submitButton.backgroundColor = "#1E1E92";
+            submitButton.style.cursor = 'pointer';
+            submitButton.color = "#fff";
             candidates.innerHTML = "Select your <span id='candidates-change-span'>second</span> choice pick"
         }
         if (rankedList.length === 3) {
-            third.style.backgroundColor = '#1a237e';
+            third.style.backgroundColor = '#1E1E92';
             fourth.style.backgroundColor = '#5757F2';
-            // submitButton.backgroundColor = "#5757F2";
-            // submitButton.color = "#fff";
+            submitButton.backgroundColor = "#1E1E92";
+            submitButton.style.cursor = 'pointer';
+            submitButton.color = "#fff";
             candidates.innerHTML = "Select your <span id='candidates-change-span'>third</span> choice pick"
         }
         if (rankedList.length === 4) {
-            fourth.style.backgroundColor = '#1a237e';
+            fourth.style.backgroundColor = '#1E1E92';
             fifth.style.backgroundColor = '#5757F2';
-            // submitButton.backgroundColor = "#5757F2";
-            // submitButton.color = "#fff";
+            submitButton.backgroundColor = "#1E1E92";
+            submitButton.style.cursor = 'pointer';
+            submitButton.color = "#fff";
             candidates.innerHTML = "Select your <span id='candidates-change-span'>fourth</span> choice pick"
         }
         if (rankedList.length === 5) {
-            fifth.style.backgroundColor = '#1a237e';
-            // submitButton.style.backgroundColor = "#5757F2";
-            // submitButton.style.color = "#fff";
+            fifth.style.backgroundColor = '#1E1E92';
+            submitButton.backgroundColor = "#1E1E92";
+            submitButton.style.cursor = 'pointer';
+            submitButton.color = "#fff";
             candidates.innerHTML = "Select your <span id='candidates-change-span'>fifth</span> choice pick"
             // make submit button change colors
         }
@@ -266,43 +268,48 @@ function Drop(){
         rankedList.push(dragItem);
 
         if (rankedList.length === 1) {
+
             // console.log('inside');
             submitButton.disabled = false;
 
             first.style.backgroundColor = '#5757F2'; //lighter blue? color1 
-            second.style.backgroundColor = '#1a237e'; //darker blue? color2
-            // submitButton.backgroundColor = "#5757F2";
-            // submitButton.color = "#fff";
-            // submitButton.style.cursor = 'pointer';
+            second.style.backgroundColor = '#1E1E92'; //darker blue? color2
+            submitButton.backgroundColor = '#1E1E92';
+            submitButton.style.cursor = 'pointer';
+            submitButton.color = "black";
             // console.log(candidates);
             // console.log(candidates.innerHTML);
             candidates.innerHTML = "Select your <span id='candidates-change-span'>second</span> choice pick"
         }
         if (rankedList.length === 2) {
             second.style.backgroundColor = '#5757F2';
-            third.style.backgroundColor = '#1a237e';
-            // submitButton.backgroundColor = "#5757F2";
-            // submitButton.color = "#fff";
+            third.style.backgroundColor = '#1E1E92';
+            submitButton.backgroundColor = "#1E1E92";
+            submitButton.style.cursor = 'pointer';
+            submitButton.color = "#fff";
             candidates.innerHTML = "Select your <span id='candidates-change-span'>third</span> choice pick"
         }
         if (rankedList.length === 3) {
             third.style.backgroundColor = '#5757F2';
-            fourth.style.backgroundColor = '#1a237e';
-            // submitButton.style.backgroundColor = "#5757F2";
-            // submitButton.style.color = "#fff";
+            fourth.style.backgroundColor = '#1E1E92';
+            submitButton.backgroundColor = "#1E1E92";
+            submitButton.style.cursor = 'pointer';
+            submitButton.color = "#fff";
             candidates.innerHTML = "Select your <span id='candidates-change-span'>fourth</span> choice pick"
         }
         if (rankedList.length === 4) {
             fourth.style.backgroundColor = '#5757F2';
-            fifth.style.backgroundColor = '#1a237e';
-            // submitButton.style.backgroundColor = "#5757F2";
-            // submitButton.style.color = "#fff";
+            fifth.style.backgroundColor = '#1E1E92';
+            submitButton.backgroundColor = "#1E1E92";
+            submitButton.style.cursor = 'pointer';
+            submitButton.color = "#fff";
             candidates.innerHTML = "Select your <span id='candidates-change-span'>fifth</span> choice pick"
         }
         if (rankedList.length === 5) {
             fifth.style.backgroundColor = '#5757F2';
-            // submitButton.style.backgroundColor = "#5757F2";
-            // submitButton.style.color = "#fff";
+            submitButton.backgroundColor = "#1E1E92";
+            submitButton.style.cursor = 'pointer';
+            submitButton.color = "#fff";
             candidates.innerHTML = "Review your vote and click submit!"
             // make submit button change colors
         }
@@ -311,7 +318,7 @@ function Drop(){
         if (dragItem.innerHTML === 'Eric Adams') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Eric Adams";
             left1.append(newP);
         }
@@ -319,7 +326,7 @@ function Drop(){
         if (dragItem.innerHTML === 'Kathryn Garcia') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Kathryn Garcia";
             left2.append(newP);
         }
@@ -327,7 +334,7 @@ function Drop(){
         if (dragItem.innerHTML === 'Eric Johnson') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Eric Johnson";
             left3.append(newP);
         }
@@ -335,7 +342,7 @@ function Drop(){
         if (dragItem.innerHTML === 'Maya Wiley') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Maya Wiley";
             left4.append(newP);
         }
@@ -343,7 +350,7 @@ function Drop(){
         if (dragItem.innerHTML === 'Andrew Yang') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Andrew Yang";
             left5.append(newP);
         }
@@ -352,7 +359,7 @@ function Drop(){
         if (dragItem.innerHTML === 'Raymond McGuire') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Raymond McGuire";
             middle1.append(newP);
         }
@@ -360,7 +367,7 @@ function Drop(){
         if (dragItem.innerHTML === 'Dianne Morales') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Dianne Morales";
             middle2.append(newP);
         }
@@ -368,7 +375,7 @@ function Drop(){
         if (dragItem.innerHTML === 'Scott Stringer') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Scott Stringer";
             middle3.append(newP);
         }
@@ -376,7 +383,7 @@ function Drop(){
         if (dragItem.innerHTML === 'Shaun Donovan') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Shaun Donovan";
             middle4.append(newP);
         }
@@ -384,7 +391,7 @@ function Drop(){
         if (dragItem.innerHTML === 'Art Chang') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Art Chang";
             middle5.append(newP);
         }
@@ -393,7 +400,7 @@ function Drop(){
         if (dragItem.innerHTML === 'Aaron Foldernauer') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Aaron Foldernauer";
             right1.append(newP);
         }
@@ -401,7 +408,7 @@ function Drop(){
         if (dragItem.innerHTML === 'Paperboy Prince') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Paperboy Prince";
             right2.append(newP);
         }
@@ -409,7 +416,7 @@ function Drop(){
         if (dragItem.innerHTML === 'Joycelyn Taylor') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Joycelyn Taylor";
             right3.append(newP);
         }
@@ -417,7 +424,7 @@ function Drop(){
         if (dragItem.innerHTML === 'Isaac Wright Jr.') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Isaac Wright Jr.";
             right4.append(newP);
         }
@@ -425,7 +432,7 @@ function Drop(){
         if (dragItem.innerHTML === 'Write In Candidate') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Write In Candidate";
             right5.append(newP);
         }
@@ -466,40 +473,44 @@ function onClick() {
             // submitButton.disabled = !submitButton.disabled;
             submitButton.disabled = true;
 
-            first.style.backgroundColor = '#1a237e'; 
+            first.style.backgroundColor = '#1E1E92'; 
             second.style.backgroundColor = '#5757F2';
-            candidates.innerHTML = "Select your <span id='candidates-change-span'>first</span> choice pick"
-            submitButton.style.backgroundColor = "whitesmoke";
-            submitButton.style.color = "black";
+            candidates.innerHTML = "Select your <span id='candidates-change-span'>first</span> choice pick";
+            submitButton.style.backgroundColor = "white";
+            submitButton.style.color = "lightgray";
             submitButton.style.cursor = 'default';
         }
         if (rankedList.length === 2) {
-            second.style.backgroundColor = '#1a237e';
+
+            second.style.backgroundColor = '#1E1E92';
             third.style.backgroundColor = '#5757F2';
             // submitButton.style.backgroundColor = "#5757F2";
             // submitButton.style.color = "#fff";
             // submitButton.style.cursor = 'pointer';
-            candidates.innerHTML = "Select your <span id='candidates-change-span'>second</span> choice pick"
+            candidates.innerHTML = "Select your <span id='candidates-change-span'>second</span> choice pick";
         }
         if (rankedList.length === 3) {
-            third.style.backgroundColor = '#1a237e';
+
+            third.style.backgroundColor = '#1E1E92';
             fourth.style.backgroundColor = '#5757F2';
             // submitButton.style.backgroundColor = "#5757F2";
             // submitButton.style.color = "#fff";
-            candidates.innerHTML = "Select your <span id='candidates-change-span'>third</span> choice pick"
+            candidates.innerHTML = "Select your <span id='candidates-change-span'>third</span> choice pick";
         }
         if (rankedList.length === 4) {
-            fourth.style.backgroundColor = '#1a237e';
+
+            fourth.style.backgroundColor = '#1E1E92';
             fifth.style.backgroundColor = '#5757F2';
             // submitButton.style.backgroundColor = "#5757F2";
             // submitButton.style.color = "#fff";
-            candidates.innerHTML = "Select your <span id='candidates-change-span'>fourth</span> choice pick"
+            candidates.innerHTML = "Select your <span id='candidates-change-span'>fourth</span> choice pick";
         }
         if (rankedList.length === 5) {
-            fifth.style.backgroundColor = '#1a237e';
+
+            fifth.style.backgroundColor = '#1E1E92';
             // submitButton.style.backgroundColor = "#5757F2";
             // submitButton.style.color = "#fff";
-            candidates.innerHTML = "Select your <span id='candidates-change-span'>fifth</span> choice pick"
+            candidates.innerHTML = "Select your <span id='candidates-change-span'>fifth</span> choice pick";
             // make submit button change colors
         }
 
@@ -664,40 +675,40 @@ function onClick() {
             // console.log(submitButton.disabled);
 
             first.style.backgroundColor = '#5757F2'; //lighter blue? color1 
-            second.style.backgroundColor = '#1a237e'; //darker blue? color2
-            submitButton.style.backgroundColor = "#1a237e";
+            second.style.backgroundColor = '#1E1E92'; //darker blue? color2
+            submitButton.style.backgroundColor = "#1E1E92";
             submitButton.style.color = "#fff";
             submitButton.style.cursor = 'pointer';
             // console.log(candidates);
             // console.log(candidates.innerHTML);
-            candidates.innerHTML = "Select your <span id='candidates-change-span'>second</span> choice pick"
+            candidates.innerHTML = "Select your <span id='candidates-change-span'>second</span> choice pick";
         }
         if (rankedList.length === 2) {
             second.style.backgroundColor = '#5757F2';
-            third.style.backgroundColor = '#1a237e';
-            submitButton.style.backgroundColor = "#1a237e";
+            third.style.backgroundColor = '#1E1E92';
+            submitButton.style.backgroundColor = "#1E1E92";
             submitButton.style.color = "#fff";
-            candidates.innerHTML = "Select your <span id='candidates-change-span'>third</span> choice pick"
+            candidates.innerHTML = "Select your <span id='candidates-change-span'>third</span> choice pick";
         }
         if (rankedList.length === 3) {
             third.style.backgroundColor = '#5757F2';
-            fourth.style.backgroundColor = '#1a237e';
-            submitButton.style.backgroundColor = "#1a237e";
+            fourth.style.backgroundColor = '#1E1E92';
+            submitButton.style.backgroundColor = "#1E1E92";
             submitButton.style.color = "#fff";
-            candidates.innerHTML = "Select your <span id='candidates-change-span'>fourth</span> choice pick"
+            candidates.innerHTML = "Select your <span id='candidates-change-span'>fourth</span> choice pick";
         }
         if (rankedList.length === 4) {
             fourth.style.backgroundColor = '#5757F2';
-            fifth.style.backgroundColor = '#1a237e';
-            submitButton.style.backgroundColor = "#1a237e";
+            fifth.style.backgroundColor = '#1E1E92';
+            submitButton.style.backgroundColor = "#1E1E92";
             submitButton.style.color = "#fff";
-            candidates.innerHTML = "Select your <span id='candidates-change-span'>fifth</span> choice pick"
+            candidates.innerHTML = "Select your <span id='candidates-change-span'>fifth</span> choice pick";
         }
         if (rankedList.length === 5) {
             fifth.style.backgroundColor = '#5757F2';
-            submitButton.style.backgroundColor = "#1a237e";
+            submitButton.style.backgroundColor = "#1E1E92";
             submitButton.style.color = "#fff";
-            candidates.innerHTML = "Review your vote and click submit!"
+            candidates.innerHTML = "Review your vote and click submit!";
             // make submit button change colors
         }
         
@@ -705,7 +716,7 @@ function onClick() {
         if (this.innerHTML === 'Eric Adams') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Eric Adams";
             left1.append(newP);
         }
@@ -713,7 +724,7 @@ function onClick() {
         if (this.innerHTML === 'Kathryn Garcia') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Kathryn Garcia";
             left2.append(newP);
         }
@@ -721,7 +732,7 @@ function onClick() {
         if (this.innerHTML === 'Eric Johnson') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Eric Johnson";
             left3.append(newP);
         }
@@ -729,7 +740,7 @@ function onClick() {
         if (this.innerHTML === 'Maya Wiley') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Maya Wiley";
             left4.append(newP);
         }
@@ -737,7 +748,7 @@ function onClick() {
         if (this.innerHTML === 'Andrew Yang') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Andrew Yang";
             left5.append(newP);
         }
@@ -746,7 +757,7 @@ function onClick() {
         if (this.innerHTML === 'Raymond McGuire') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Raymond McGuire";
             middle1.append(newP);
         }
@@ -754,7 +765,7 @@ function onClick() {
         if (this.innerHTML === 'Dianne Morales') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Dianne Morales";
             middle2.append(newP);
         }
@@ -762,7 +773,7 @@ function onClick() {
         if (this.innerHTML === 'Scott Stringer') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Scott Stringer";
             middle3.append(newP);
         }
@@ -770,7 +781,7 @@ function onClick() {
         if (this.innerHTML === 'Shaun Donovan') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Shaun Donovan";
             middle4.append(newP);
         }
@@ -778,7 +789,7 @@ function onClick() {
         if (this.innerHTML === 'Art Chang') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Art Chang";
             middle5.append(newP);
         }
@@ -787,7 +798,7 @@ function onClick() {
         if (this.innerHTML === 'Aaron Foldernauer') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Aaron Foldernauer";
             right1.append(newP);
         }
@@ -795,7 +806,7 @@ function onClick() {
         if (this.innerHTML === 'Paperboy Prince') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Paperboy Prince";
             right2.append(newP);
         }
@@ -803,7 +814,7 @@ function onClick() {
         if (this.innerHTML === 'Joycelyn Taylor') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Joycelyn Taylor";
             right3.append(newP);
         }
@@ -811,7 +822,7 @@ function onClick() {
         if (this.innerHTML === 'Isaac Wright Jr.') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Isaac Wright Jr.";
             right4.append(newP);
         }
@@ -819,7 +830,7 @@ function onClick() {
         if (this.innerHTML === 'Write In Candidate') {
             let newP = document.createElement("p");
             newP.className = 'card-panel';
-            newP.style.backgroundColor = "gray";
+            newP.style.backgroundColor = "#D9D9D9";
             newP.innerHTML = "Write In Candidate";
             right5.append(newP);
         }
@@ -832,12 +843,205 @@ function onClick() {
 
 }
 
-function togglePopup(){
-    document.getElementById('popup-1').classList.toggle("active");
+function submitClick() {
+    let newList = [];
+    for(let i = 0 ; i < rankedList.length; i++){
+        newList.push(rankedList[i].innerHTML);
+    }
+
+    sessionStorage.setItem('list', JSON.stringify(newList));
+    
+    location.href = "/submit.html";
+    // sessionStorage.setItem("rankedList", rankedList);
+    
 }
 
-function submitClick() {
-    console.log('test');
+function Onload() {
+    console.log('tst');
+}
+
+function update() {
+    if (rankedList.length === 0) {
+        first.style.backgroundColor = '#1E1E92';
+        second.style.backgroundColor = '#5757F2';
+
+    }
+    if (rankedList.length === 1) {
+        // submitButton.disabled = !submitButton.disabled;
+        submitButton.disabled = true;
+
+
+        first.style.backgroundColor = '#1E1E92'; 
+        second.style.backgroundColor = '#5757F2';
+        candidates.innerHTML = "Select your <span id='candidates-change-span'>first</span> choice pick"
+        submitButton.style.backgroundColor = "whitesmoke";
+        submitButton.style.color = "black";
+        submitButton.style.cursor = 'default';
+    }
+    if (rankedList.length === 2) {
+
+        second.style.backgroundColor = '#1E1E92';
+        third.style.backgroundColor = '#5757F2';
+        // submitButton.style.backgroundColor = "#5757F2";
+        // submitButton.style.color = "#fff";
+        // submitButton.style.cursor = 'pointer';
+        candidates.innerHTML = "Select your <span id='candidates-change-span'>second</span> choice pick"
+    }
+    if (rankedList.length === 3) {
+
+        third.style.backgroundColor = '#1E1E92';
+        fourth.style.backgroundColor = '#5757F2';
+        // submitButton.style.backgroundColor = "#5757F2";
+        // submitButton.style.color = "#fff";
+        candidates.innerHTML = "Select your <span id='candidates-change-span'>third</span> choice pick"
+    }
+    if (rankedList.length === 4) {
+
+        fourth.style.backgroundColor = '#1E1E92';
+        fifth.style.backgroundColor = '#5757F2';
+        // submitButton.style.backgroundColor = "#5757F2";
+        // submitButton.style.color = "#fff";
+        candidates.innerHTML = "Select your <span id='candidates-change-span'>fourth</span> choice pick"
+    }
+    if (rankedList.length === 5) {
+
+        fifth.style.backgroundColor = '#1E1E92';
+        // submitButton.style.backgroundColor = "#5757F2";
+        // submitButton.style.color = "#fff";
+        candidates.innerHTML = "Select your <span id='candidates-change-span'>fifth</span> choice pick"
+        // make submit button change colors
+    }
+}
+
+function xClick() {
+    // // console.log(this);
+    // if(this.id === 'x-1') {
+    //     // console.log('1');
+    //     if (rankedList[0].innerHTML === 'Eric Adams') {
+    //         while (left1.firstChild) {
+    //             left1.removeChild(left1.firstChild);
+    //         }
+    //         // this.remove();
+    //         left1.append(rankedList[0]);
+    //         x1.style.display = 'none';
+    //         update();
+    //         const index = rankedList.indexOf(rankedList[0]);
+    //         if (index > -1) { rankedList.splice(index, 1) }
+    //     }
+
+    //     if (rankedList[0].innerHTML === 'Kathryn Garcia') {
+    //         while (left2.firstChild) {
+    //             left2.removeChild(left2.firstChild);
+    //         }
+    //         // this.remove();
+    //         left2.append(rankedList[0]);
+    //         x1.style.display = 'none';
+    //         update();
+    //         const index = rankedList.indexOf(rankedList[0]);
+    //         if (index > -1) { rankedList.splice(index, 1) }
+    //     }
+
+    //     if (rankedList[0].innerHTML === 'Eric Johnson') {
+    //         while (left3.firstChild) {
+    //             left3.removeChild(left3.firstChild);
+    //         }
+    //         // this.remove();
+    //         left3.append(rankedList[0]);
+    //         x1.style.display = 'none';
+    //         update();
+    //         const index = rankedList.indexOf(rankedList[0]);
+    //         if (index > -1) { rankedList.splice(index, 1) }
+    //     }
+
+    //     if (rankedList[0].innerHTML === 'Maya Wiley') {
+    //         while (left4.firstChild) {
+    //             left4.removeChild(left4.firstChild);
+    //         }
+    //         // this.remove();
+    //         left4.append(rankedList[0]);
+    //         x1.style.display = 'none';
+    //         update();
+    //         const index = rankedList.indexOf(rankedList[0]);
+    //         if (index > -1) { rankedList.splice(index, 1) }
+    //     }
+
+    //     if (rankedList[0].innerHTML === 'Andrew Yang') {
+    //         while (left5.firstChild) {
+    //             left5.removeChild(left5.firstChild);
+    //         }
+    //         // this.remove();
+    //         left5.append(rankedList[0]);
+    //         x1.style.display = 'none';
+    //         update();
+    //         const index = rankedList.indexOf(rankedList[0]);
+    //         if (index > -1) { rankedList.splice(index, 1) }
+    //     }
+    // }
+
+    // if(this.id === 'x-2') {
+    //     // console.log('1');
+    //     if (rankedList[1].innerHTML === 'Eric Adams') {
+    //         while (left1.firstChild) {
+    //             left1.removeChild(left1.firstChild);
+    //         }
+    //         // this.remove();
+    //         left1.append(rankedList[1]);
+    //         x2.style.display = 'none';
+    //         update();
+    //         const index = rankedList.indexOf(rankedList[1]);
+    //         if (index > -1) { rankedList.splice(index, 1) }
+    //     }
+
+    //     if (rankedList[1].innerHTML === 'Kathryn Garcia') {
+    //         while (left2.firstChild) {
+    //             left2.removeChild(left2.firstChild);
+    //         }
+    //         // this.remove();
+    //         left2.append(rankedList[1]);
+    //         x2.style.display = 'none';
+    //         update();
+    //         const index = rankedList.indexOf(rankedList[1]);
+    //         if (index > -1) { rankedList.splice(index, 1) }
+    //     }
+
+    //     if (rankedList[1].innerHTML === 'Eric Johnson') {
+    //         while (left3.firstChild) {
+    //             left3.removeChild(left3.firstChild);
+    //         }
+    //         // this.remove();
+    //         left3.append(rankedList[1]);
+    //         x2.style.display = 'none';
+    //         update();
+    //         const index = rankedList.indexOf(rankedList[1]);
+    //         if (index > -1) { rankedList.splice(index, 1) }
+    //     }
+
+    //     if (rankedList[1].innerHTML === 'Maya Wiley') {
+    //         while (left4.firstChild) {
+    //             left4.removeChild(left4.firstChild);
+    //         }
+    //         // this.remove();
+    //         left4.append(rankedList[1]);
+    //         x2.style.display = 'none';
+    //         update();
+    //         const index = rankedList.indexOf(rankedList[1]);
+    //         if (index > -1) { rankedList.splice(index, 1) }
+    //     }
+
+    //     if (rankedList[1].innerHTML === 'Andrew Yang') {
+    //         while (left5.firstChild) {
+    //             left5.removeChild(left5.firstChild);
+    //         }
+    //         // this.remove();
+    //         left5.append(rankedList[1]);
+    //         x2.style.display = 'none';
+    //         update();
+    //         const index = rankedList.indexOf(rankedList[1]);
+    //         if (index > -1) { rankedList.splice(index, 1) }
+    //     }
+    // }
+
+    
 }
 
 /* $(document).ready(function() {

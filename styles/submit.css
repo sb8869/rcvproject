@@ -1,0 +1,227 @@
+.black-text {
+    color: #000 !important;
+}
+
+.white-text {
+    color: white !important;
+    font-weight: 600;
+}
+
+html {
+    overflow-y: hidden;
+}
+
+nav {
+    background-color: #fff !important;
+    box-shadow: none !important;
+    margin: 1em 0em !important;
+}
+
+#logo {
+    width: 320px;
+    padding-left: 47px;
+    padding-top: 13px;
+}
+
+h4 {
+    text-align: center !important;
+}
+
+.card-panel {
+    cursor: pointer;    
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+section {
+    width: auto; 
+    height: auto;
+    display: flex !important;
+    justify-content: space-between;
+}
+
+#instructions_button, #access_button, #help_button {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 8px;
+    background: #1E1E92;
+    border-radius: 32px;
+}
+#access_button {
+    left: 1600px;
+}
+#instructions_button {
+    left: 1700px;
+}
+#help_button {
+    left: 1800px;
+}
+#instructions_button img, #access_button img, #help_button img {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+#access_button img {
+    left: 12px;
+}
+#instructions_button img {
+    top: 14px;
+}
+#help_button img {
+    left: 6px;
+    top: 4px;
+}
+#instructionsText, #helpText, #accessibilityText {
+    font-size: 0.8em;
+    position: absolute;
+    top: 76px;
+    font-weight: 600;
+}
+#accessibilityText {
+    left: 1584px;
+}
+#instructionsText {
+    left: 1689px;
+}
+#helpText {
+    left: 1810px;
+}
+
+
+
+
+#rank {
+    position: absolute;
+    top: 110px;
+    left: 820px;
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+}
+
+#numSubmit {
+    font-weight: 600;
+    width: 325px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 8px !important;
+    border: none;
+    margin-top: 60px;
+}
+
+#numSubmit:hover, #numSubmit:focus{
+    border: none;
+}
+
+#numSubmit:active{
+    border: none;
+    background-color: white;
+}
+
+.choice-container {
+    display: flex !important;
+    background-color: none;
+    border-radius: 8px !important;
+    margin: 0 auto;
+
+}
+
+div.choice {
+    width: 325px;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 8px !important;
+}
+
+.choices {
+    border-radius: 8px !important;
+    box-shadow: 6px 6px 25px rgb(52 52 143 / 30%) !important;
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+
+.scroll {
+    overflow-y: auto;
+}
+
+#middle {
+    box-shadow: 6px 6px 25px rgba(52, 52, 143, 0.3) !important; 
+    border-radius: 2px !important;
+
+    background-color: #5454e7;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-left: 100px;
+    width: 530px;
+    height: 900px;
+}
+
+
+/* animation */
+
+/* .transform {
+    -webkit-transition: all 2s ease;  
+    -moz-transition: all 2s ease;  
+    -o-transition: all 2s ease;  
+    -ms-transition: all 2s ease;  
+    transition: all 2s ease;
+}
+
+.transform-active {
+    top: 500px;
+    opacity: 0;
+} */
+
+.word {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: word2 3s 1 ease forwards;
+    animation-delay: 1s;
+
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 800;
+    color: #5454e7;
+}
+
+@keyframes word2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        font-size: 100px;
+    }
+}
+
+.moving {
+    /* -webkit-animation-name: move;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards; */
+
+    animation: move 3s 1 ease forwards;
+
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(1000px);
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+

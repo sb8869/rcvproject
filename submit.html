@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    <script src="https://kit.fontawesome.com/1135650420.js" crossorigin="anonymous"></script>
+    <!-- <script type="module" src="src/main.js"></script> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/submit.css">
+    <script type="module" src="src/submit.js"></script>
+    <title>RCV Submit Page</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+        <a href="./index.html" class="text white-text" ><img src="assets/rcv_colorlogo.png" alt="2021 New York Primary for Democratic Logo." id="logo"></a>
+          <ul class="right hide-on-med-and-down">
+
+            <li id="access_button"> <img  src="assets/accessibility_icon.png" alt="accessibility button"> </li>
+            <li id="instructions_button"> <img src="assets/instructions icon.png" alt="instructions button"> </li>
+            <li id="help_button"> <img  src="assets/help_icon.png" alt="help button"> </li>
+
+             <!--
+            <li><a href="#" class="black-text"><i class="black-text material-icons left fas fa-cogs"></i> Accessibility </a></li>
+            <li><a href="#" class="black-text"><i class="black-text material-icons left fas fa-info-circle"></i> Instructions </a></li>
+            <li><a href="#" class="black-text"><i class="black-text material-icons left fas fa-question-circle"></i> Help </a></li>
+            -->
+
+          </ul>
+        </div>
+    </nav>
+
+    <h5 id="accessibilityText">Accessibility</h5>
+    <h5 id="instructionsText">Instructions</h5>
+    <h5 id="helpText">Help</h5>
+
+
+
+    <section id='move'>
+        <div id="middle">
+        <h5 id="rank">Your Ranked Ballot</h5>
+        <div class="choice-container">
+            <div id='submitAppend' class='choice'>
+        
+            </div>
+        </div>
+        <button id="numSubmit" type="button" class="card-panel">Cast Vote</button>
+        </div>
+    </section>
+
+    <div id='move2'>You Voted!</div>
+
+
+</body>
+
+</html>

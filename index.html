@@ -19,7 +19,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -28,23 +28,17 @@
           <a href="#" class="text white-text"><img src="assets/logo.png" id="logo" alt="2021 New York Primary for Democratic Logo."></a>
           <ul class="right hide-on-med-and-down">
 
-            <li> <a class="btn-floating btn-medium waves-effect waves-light indigo darken-4"> <i class="material-icons fas fa-cog"></i></a>  </li>
-            <li> <a class="btn-floating btn-medium waves-effect waves-light indigo darken-4"> <i class="material-icons fas fa-book-reader"></i></a>  </li>
-            <li> <a class="btn-floating btn-medium waves-effect waves-light indigo darken-4"> <i class="material-icons fas fa-question"></i></a>  </li>
-
-             <!--
-            <li><a href="#" class="black-text"><i class="black-text material-icons left fas fa-cogs"></i> Accessibility </a></li>
-            <li><a href="#" class="black-text"><i class="black-text material-icons left fas fa-info-circle"></i> Instructions </a></li>
-            <li><a href="#" class="black-text"><i class="black-text material-icons left fas fa-question-circle"></i> Help </a></li>
-            -->
+            <li id="access_button"> <img  src="assets/accessibility_icon.png" alt="accessibility button"> </li>
+            <li id="instructions_button"> <img src="assets/instructions icon.png" alt="instructions button"> </li>
+            <li id="help_button"> <img  src="assets/help_icon.png" alt="help button"> </li>
 
           </ul>
         </div>
     </nav>
 
-    <h5 id="settingsText">Settings</h5>
-    <!-- <h5 id="accessibilityText">Accessibility</h5> -->
-    <!-- <h5 id="helpText">Help</h5> -->
+    <h5 id="accessibilityText">Accessibility</h5>
+    <h5 id="instructionsText">Instructions</h5>
+    <h5 id="helpText">Help</h5>
 
     <h5 id="rank">Your Ranked Ballot</h5>
 
@@ -115,5 +109,12 @@
     <div id='num4'>4</div>
     <div id='num5'>5</div>
     <button id='numSubmit' type="button" class="card-panel">Submit</button>
+
+    <span id="blankSpace1" class="card-panel inner-shadow"></span>
+    <span id="blankSpace2" class="card-panel inner-shadow"></span>
+    <span id="blankSpace3" class="card-panel inner-shadow"></span>
+    <span id="blankSpace4" class="card-panel inner-shadow"></span>
+    <span id="blankSpace5" class="card-panel inner-shadow"></span>
+
 </body>
 </html>
