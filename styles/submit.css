@@ -162,7 +162,6 @@ div.choice {
     height: 900px;
 }
 
-
 /* animation */
 
 /* .transform {
@@ -178,12 +177,16 @@ div.choice {
     opacity: 0;
 } */
 
+#move2 {
+    opacity: 0%;
+}
+
 .word {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
+    opacity: 0%;
     animation: word2 3s 1 ease forwards;
     animation-delay: 1s;
 

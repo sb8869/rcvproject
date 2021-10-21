@@ -851,7 +851,7 @@ function submitClick() {
 
     sessionStorage.setItem('list', JSON.stringify(newList));
     
-    location.href = "/submit.html";
+    location.href = "submit.html";
     // sessionStorage.setItem("rankedList", rankedList);
     
 }
